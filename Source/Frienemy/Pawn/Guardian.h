@@ -4,18 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
-#include "Camera/CameraComponent.h"
-#include "InvisibleMan.generated.h"
+#include "Guardian.generated.h"
 
 UCLASS()
-class FRIENEMY_API AInvisibleMan : public APawn
+class FRIENEMY_API AGuardian : public APawn
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this pawn's properties
-	AInvisibleMan();
-	UCameraComponent * TopViewCamera;
+	AGuardian();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

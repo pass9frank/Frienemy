@@ -3,14 +3,14 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/GameModeBase.h"
-#include "FrienemyGameModeBase.generated.h"
+#include "GameFramework/PlayerState.h"
+#include "FrienemyPlayerState.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class FRIENEMY_API AFrienemyGameModeBase : public AGameModeBase
+class FRIENEMY_API AFrienemyPlayerState : public APlayerState
 {
 	GENERATED_BODY()
 	

@@ -4,17 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
-#include "UISceneMode.generated.h"
+#include "Frienemy_Normal_Mode.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class FRIENEMY_API AUISceneMode : public AGameModeBase
+class FRIENEMY_API AFrienemy_Normal_Mode : public AGameModeBase
 {
 	GENERATED_BODY()
-	
-	
+		AFrienemy_Normal_Mode();
+		
 	
 	
 };

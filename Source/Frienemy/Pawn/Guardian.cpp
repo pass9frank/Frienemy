@@ -1,32 +1,32 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "InvisibleMan.h"
+#include "Guardian.h"
 
 
 // Sets default values
-AInvisibleMan::AInvisibleMan()
+AGuardian::AGuardian()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-	TopViewCamera = NewObject<UCameraComponent>(this,TEXT("TopViewCamera"));
+
 }
 
 // Called when the game starts or when spawned
-void AInvisibleMan::BeginPlay()
+void AGuardian::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
 // Called every frame
-void AInvisibleMan::Tick(float DeltaTime)
+void AGuardian::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
 }
 
 // Called to bind functionality to input
-void AInvisibleMan::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void AGuardian::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
