@@ -29,19 +29,19 @@ void AGuy::Tick(float DeltaTime)
 void AGuy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-	PlayerInputComponent->BindAxisKey(EKeys::Gamepad_LeftX, this, &AGuy::Move_XAxis);
-	PlayerInputComponent->BindAxisKey(EKeys::Gamepad_LeftY, this, &AGuy::Move_YAxis);
+	//PlayerInputComponent->BindAxisKey(EKeys::Gamepad_LeftX, this, &AGuy::Move_XAxis);
+	//PlayerInputComponent->BindAxisKey(EKeys::Gamepad_LeftY, this, &AGuy::Move_YAxis);
 }
 
 void AGuy::Move_XAxis(const float AxisValue)
 {
-	AddMovementInput(GetActorRightVector(), AxisValue);
+	//AddMovementInput(GetActorRightVector(), AxisValue);
 	//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("X:%f"),AxisValue));
 }
 
 void AGuy::Move_YAxis(const float AxisValue)
 {
-	AddMovementInput(GetActorForwardVector(), AxisValue);
+	//AddMovementInput(GetActorForwardVector(), AxisValue);
 	//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, FString::Printf(TEXT("Y:%f"), AxisValue));
 }
 

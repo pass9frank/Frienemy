@@ -29,6 +29,49 @@ void AGuardian::Tick(float DeltaTime)
 void AGuardian::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
+	//PlayerInputComponent->BindTouch(EInputEvent::IE_Pressed, this, &AGuardian::OnTouchBegin);
+	//PlayerInputComponent->BindTouch(EInputEvent::IE_Released,this,&AGuardian::OnTouchEnd);
+	//PlayerInputComponent->BindTouch(EInputEvent::IE_Repeat, this, &AGuardian::OnFingerMove);
+	//PlayerInputComponent->BindKey(EKeys::LeftMouseButton,IE_Pressed,this,
 }
+//
+//void AGuardian::OnTouchBegin(ETouchIndex::Type FingerIndex, FVector Location)
+//{
+//	if (FingerIndex == ETouchIndex::Touch1)
+//	{
+//		FHitResult hitResultOut;
+//		if (GetWorld()->GetFirstPlayerController()->GetHitResultAtScreenPosition(FVector2D(Location.X,Location.Y), ECollisionChannel::ECC_GameTraceChannel1,false, hitResultOut))
+//		{
+//			ReceiveBeginTouchEmissionArea(hitResultOut.ImpactPoint, hitResultOut.ImpactNormal);
+//		}
+//
+//	}
+//}
+//
+//void AGuardian::OnTouchEnd(ETouchIndex::Type FingerIndex, FVector Location)
+//{
+//	if (FingerIndex == ETouchIndex::Touch1)
+//	{
+//		FHitResult hitResultOut;
+//		if (GetWorld()->GetFirstPlayerController()->GetHitResultAtScreenPosition(FVector2D(Location.X, Location.Y), ECollisionChannel::ECC_GameTraceChannel2, false, hitResultOut))
+//		{
+//			ReceiveEndTouchAimArea(hitResultOut.ImpactPoint, hitResultOut.ImpactNormal);
+//		}
+//
+//	}
+//}
+//
+//void AGuardian::OnFingerMove(ETouchIndex::Type FingerIndex, FVector Location)
+//{
+//
+//	if (FingerIndex == ETouchIndex::Touch1)
+//	{
+//		FHitResult hitResultOut;
+//		if (GetWorld()->GetFirstPlayerController()->GetHitResultAtScreenPosition(FVector2D(Location.X, Location.Y), ECollisionChannel::ECC_GameTraceChannel2, false, hitResultOut))
+//		{
+//			ReceiveFingerMoveOnAimArea(hitResultOut.ImpactPoint, hitResultOut.ImpactNormal);
+//		}
+//
+//	}
+//}
 

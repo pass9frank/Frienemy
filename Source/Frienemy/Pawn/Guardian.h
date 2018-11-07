@@ -25,7 +25,29 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	//void OnTouchBegin(ETouchIndex::Type FingerIndex, FVector Location);
+	//void OnTouchEnd(ETouchIndex::Type FingerIndex, FVector Location);
+	//void OnFingerMove(ETouchIndex::Type FingerIndex, FVector Location);
+	//void OnMousePressed();
+	//void OnMouseReleased();
+	//void OnMouseMove();
+	
+	//UFUNCTION(BlueprintImplementableEvent,meta = (DisplayName = "BeginTouchEmissionArea"))
+	//void ReceiveBeginTouchEmissionArea(FVector Location,FVector ImpactNormal);
 
-	
-	
+	//UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "EndTouchAimArea"))
+	//void ReceiveEndTouchAimArea(FVector Location, FVector ImpactNormal);
+	//
+	//UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "FingerMoveOnAimArea"))
+	//void ReceiveFingerMoveOnAimArea(FVector Location, FVector ImpactNormal);
+
+	//UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "MousePressedOnEmissionArea"))
+	//void ReceiveMousePressedOnEmissionArea(FVector Location, FVector ImpactNormal);
+
+	//UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "MouseReleasedOnAimArea"));
+	//void ReceiveMouseReleasedOnAimArea(FVector Location, FVector ImpactNormal);
+
+	//UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "MouseMoveOnAimArea"))
+	//void ReceiveMouseMoveOnAimArea(FVector Location, FVector ImpactNormal);
+
 };
